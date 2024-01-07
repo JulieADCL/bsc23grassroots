@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 WORKDIR /app
 
 # Copy the project's requirements.txt and install dependencies
-COPY requirements.txt /app/
+COPY ../requirements.txt /app/
 RUN pip install -r requirements.txt
 
 # Copy the Django project source code to the container
